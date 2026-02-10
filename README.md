@@ -45,3 +45,9 @@ Test rapido, 3 cicli, hot start, 30 sec acquisizione, 120 di attesa. Aspetto il 
 Log nel terrazzo esterno di MOVE, GNSS messi male (sul ghiaino ma vicini alla struttura - tempi per fix lunghi). Versione programma M3. Tre cicli di un ora, acquisizione di 60 s.
 
 - 6_enu_log.csv
+
+### **7. log MOVE 06/02/26 - 09/02/26**
+
+Log sul terrazzo con le due antenne sul palo, maltempo (forse anche grandine) durante il log, 64 cicli totali. Acquisizione di 60 secondi ogni ora. Hot start e sleep. Versione programma M3.
+
+- 7_enu_log.csv 

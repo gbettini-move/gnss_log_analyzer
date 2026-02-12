@@ -9,7 +9,7 @@ import logging
 # ---------------------------
 CONFIG = {
     "csv_file": "7_enu_log.csv",
-    "columns": ["E[cm]", "N[cm]", "U[cm]"],
+    "columns": ["E[cm]", "N[cm]", "U[cm]", "TTSF[s]"],
 }
 
 logging.basicConfig(level=logging.INFO)
@@ -69,6 +69,7 @@ def compute_global_metrics(df):
     mean_N = df["N[cm]"].mean()
     mean_U = df["U[cm]"].mean()
     u_all = df["U[cm]"] - mean_U
+    mean_TTSF = df["TTSF[s]"].mean()
     
     return {
         "samples": len(df),
@@ -78,7 +79,8 @@ def compute_global_metrics(df):
         "CEP50": np.percentile(df["r"], 50),
         "CEP95": np.percentile(df["r"], 95),
         "RMS_H": np.sqrt(np.mean(df["r"]**2)),
-        "STD_U": np.std(u_all)
+        "STD_U": np.std(u_all),
+        "mean_TTSF": mean_TTSF
     }
 
 # ---------------------------

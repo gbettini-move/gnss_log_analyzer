@@ -1,13 +1,14 @@
 [project]
 name = "log_GNSS"
-version = "1.0"
+version = "1.1"
 readme = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
     "numpy==1.25.2",
     "pandas==2.0.3",
-    "plotly==6.5.2"
+    "plotly==6.5.2",
+    "dash==4.0.0"
 ]
 
 [dependency-groups]
